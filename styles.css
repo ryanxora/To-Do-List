@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Jost", sans-serif;
+}
+
+:root{
+    --text-color-black : #333;
+    --delete-btn-bg: #999999;
+    --bg-color-white : #b4b4b4;
+    --wrapper-bg : #f2f2f2;
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: var(--bg-color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.main-wrap{
+    width: 500px;
+    height: auto;
+    min-height: 400px;
+    background-color: var(--wrapper-bg);
+    padding: 2rem 1.25rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.main-wrap .input-wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-wrap .input-wrap #task-input{
+    flex: 1;
+    height: 35px;
+    padding: 4px 8px;
+    border: 2px solid var(--text-color-black);
+    color: var(--text-color-black);
+    font-family: jost, sans-serif;
+}
+
+
+.main-wrap .input-wrap #add-btn{
+    height: 35px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    background-color: var(--text-color-black);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--text-color-black);
+}
+
+.main-wrap .input-wrap #add-btn img{
+    width: 25px;
+    aspect-ratio: 1/1;
+    user-select: none;
+}
+
+
+.main-wrap .task-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+}
+
+.main-wrap .task-menu li{
+    width: 100%;
+    background-color: #fff;
+    padding: 4px 8px;
+}
+
+.main-wrap .task-menu li .each-wrap{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-wrap .task-menu li .each-wrap #text{
+    color: var(--text-color-black);
+    user-select: none;
+    cursor: pointer;
+}
+
+.main-wrap .task-menu li .each-wrap button{
+    width: 30px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--delete-btn-bg);
+    cursor: pointer;
+}
+
+.main-wrap .task-menu li{
+    margin-bottom: 8px;
+}
+
+.main-wrap .task-menu li .each-wrap button img{
+    width: 20px;
+    aspect-ratio: 1/1;
+    user-select: none;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: var(--text-color-black);
+}
