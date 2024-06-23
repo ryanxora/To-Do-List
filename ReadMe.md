@@ -1,4 +1,4 @@
-Sure, let's break down this jQuery code step by step:
+(using chatGpt)let's break down this jQuery code step by step:
 
 ### 1. Document Ready Function
 
